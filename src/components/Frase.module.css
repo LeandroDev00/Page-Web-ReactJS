@@ -1,0 +1,22 @@
+.fraseContainer{
+    border: 2px solid #111;
+    align-items:center;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.fraseContainer2{
+    border: 2px solid #111;
+    align-items:center;
+    padding: 40px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.fraseContent{
+    color:#fff;
+    background-color: #333;
+    margin: 0px;
+}
