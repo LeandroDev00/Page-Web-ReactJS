@@ -1,0 +1,12 @@
+.Card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 3px;
+}
