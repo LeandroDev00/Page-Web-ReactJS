@@ -28,6 +28,15 @@ app.post("/register", (req, res)=>{
     
 });
 
+app.get("/getCards", (req, res)=>{
+    let Sql = "SELECT * FROM dados";
+    
+    db.query(Sql, (err,result)=>{
+        if (err) console.log(err);
+        else res.send(result);
+    });
+});
+
 app.listen(3001, ()=>{
     console.log("[....Rodando servidor....]");
 });

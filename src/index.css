@@ -2,14 +2,10 @@ body{
   padding: 50px;
   background-color:rgb(206, 206, 206);
   padding-bottom: 50px;
+  font-size: 20px;
 }
 
 h1{
   color:#333;
 }
 
-p{
-  background-color: #333;
-  padding: 15px;
-  color:aliceblue;
-}
