@@ -10,7 +10,6 @@ export default function title(){
                 <h4>Email</h4>
                 <h4>Profissao</h4>
                 <h4>Idade</h4>
-            </div>
-        
+        </div>
     );
 }

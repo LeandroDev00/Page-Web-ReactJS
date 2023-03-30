@@ -47,13 +47,13 @@ const [listdata, setlistData] = useState();
           <input type="text" placeholder="Nome..." required="requerid" name="name" onChange={handleChangeValues} />
 
           <label>Telefone:</label>
-          <input type="tel" placeholder="Contato ..." required="requerid" name="telefone" onChange={handleChangeValues} />
+          <input type="tel" placeholder="Contato..." required="requerid" name="telefone" onChange={handleChangeValues} />
 
           <label>Email:</label>
           <input type="email" placeholder="Email ..." required="requerid" name="Email" onChange={handleChangeValues} />
 
           <label>Profissão:</label>
-          <input type="text" placeholder="Profissão deseja ..." required="requerid" name="profissao" onChange={handleChangeValues} />
+          <input type="text" placeholder="Profissão..." required="requerid" name="profissao" onChange={handleChangeValues} />
 
           <label>Idade:</label>
           <input type="text" placeholder="Sua Idade ..." required="requerid" name="idade" onChange={handleChangeValues} />
