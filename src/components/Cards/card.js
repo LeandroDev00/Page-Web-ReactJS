@@ -10,7 +10,7 @@ export default function Card(props){
                 <p className="card-email">{props.Email}</p>
                 <p className="card-profissao">{props.profissao}</p>
                 <p className="card-idade">{props.idade}</p>
-            </div>    
+            </div>   
         </>
     );
 }

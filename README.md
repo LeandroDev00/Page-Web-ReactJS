@@ -1,5 +1,5 @@
 # Layout do sistema:
-<img alt="Layout" src="layout_img\page web execute.gif">
+<img alt="Layout" src="page web execute.gif">
 
 # Getting Started with Create React App
 

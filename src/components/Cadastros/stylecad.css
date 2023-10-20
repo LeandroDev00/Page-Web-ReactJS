@@ -1,0 +1,30 @@
+.fraseContainer{
+    border: 2px solid #111;
+    align-items:center;
+    padding: 40px;
+    text-align: end;
+
+}
+
+.buttoncad{
+    width: 10%;
+    height: 30px;
+    margin-top: 2%;
+    margin: 2%;
+    justify-content:space-between;
+    transition: all 0.5s;
+    border: none;
+    font-weight: 100;
+    font-size: 90%;
+    background-color: #282c34;
+    color: antiquewhite;
+  }
+  
+  .buttoncad:hover{
+    transition: 0.1s, 0.1s ease-in-out;
+    transform: scale(1.1);
+  }
+  .buttoncons:hover{
+    transition: 0.1s, 0.1s ease-in-out;
+    transform: scale(1.1);
+  }

@@ -3,6 +3,7 @@ const app = express();
 const mysql2 = require("mysql2");
 const cors = require("cors");
 
+
 const db = mysql2.createPool({
     host:"localhost",
     user:"root",
