@@ -1,5 +1,5 @@
 .fraseContainer{
-    border: 2px solid #111;
+    border: 2px solid #7e7d7d;
     align-items:center;
     padding: 40px;
     text-align: end;
@@ -16,7 +16,7 @@
     border: none;
     font-weight: 100;
     font-size: 90%;
-    background-color: #282c34;
+    background-color: #02215e;
     color: antiquewhite;
   }
   

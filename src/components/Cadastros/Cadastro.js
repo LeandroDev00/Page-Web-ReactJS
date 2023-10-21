@@ -27,36 +27,36 @@ function Cadastro(){
     return(
         <>
         <div className="App">
+          <p className="cabecalho">Cadastro de Funcionarios 📑</p>
             <form className="fraseContainer">
                 <div className='formulario'>
-                    <p className="cabecalho">Registro de usuários</p>
-                    <div>
-                      <label>Nome:</label>
-                      <input className="name" type="text" placeholder="Nome..." required="requerid" name="name" onChange={handleChangeValues} />
+                    <div className="form_group">
+                      <input className="form_field" type="input" placeholder="Name" required="requerid" name="name" onChange={handleChangeValues} />
+                      <label for="name" className="form_label">Name</label>
                     </div>
 
-                    <div>
-                      <label>Telefone:</label>
-                      <input className="telefone"type="tel" placeholder="Contato..." required="requerid" name="telefone" onChange={handleChangeValues} />
+                    <div className="form_group">
+                      <input className="form_field" type="tel" placeholder="Contact..." required="requerid" name="telefone" onChange={handleChangeValues} />
+                      <label for="name" className="form_label">Contact  </label>
                     </div>
 
-                    <div>
-                      <label>Email:</label>
-                      <input className="email" type="email" placeholder="Email ..." required="requerid" name="Email" onChange={handleChangeValues} />
+                    <div className="form_group">
+                      <input className="form_field" type="email" placeholder="Email ..." required="requerid" name="Email" onChange={handleChangeValues} />
+                      <label for="name" className="form_label">Email  </label>
                     </div>
 
-                    <div>
-                      <label>Profissão:</label>
-                      <input className="profissao"type="text" placeholder="Profissão..." required="requerid" name="profissao" onChange={handleChangeValues} />
+                    <div className="form_group">
+                      <input className="form_field"type="input" placeholder="Professional..." required="requerid" name="profissao" onChange={handleChangeValues} />
+                      <label for="name" className="form_label">Professional  </label>
                     </div>
 
-                    <div>
-                      <label>Idade:</label>
-                      <input className="idade"type="text" placeholder="Sua Idade ..." required="requerid" name="idade" onChange={handleChangeValues} />
+                    <div className="form_group">
+                      <input className="form_field"type="input" placeholder="Age ..." required="requerid" name="idade" onChange={handleChangeValues} />
+                      <label for="name" className="form_label">Age  </label>
                     </div>
                 </div>
-                <button className="buttoncad" onClick={() => handleonclickButton()}>Cadastrar</button>
-                <button type="reset" className="buttoncad">Limpar</button>
+                <button className="buttoncad" onClick={() => handleonclickButton()}>CADASTRAR</button>
+                <button type="reset" className="buttoncad">LIMPAR</button>
             </form>
         </div>
       </>

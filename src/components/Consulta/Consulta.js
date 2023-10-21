@@ -5,7 +5,6 @@ import Card from "../Cards/card";
 import Cardtitle from "../Cards/cardtitle";
 
 
-
 function Consultadados(){
 const [listdata, setlistData] = useState();
     
@@ -24,7 +23,7 @@ const [listdata, setlistData] = useState();
             listdata.map((value) => {
               return (
                 <Card
-
+                  id={value.idcadastro}
                   name={value.name}
                   telefone={value.telefone}
                   Email={value.email}

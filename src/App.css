@@ -8,42 +8,76 @@
   display: flex;
 }
 
-.formulario div{
+.cabecalho{
+  width:30%;
+  font-size: 30px;
+}
+/*
+.form_group{
   display: flex;
-  margin-left: 20%;
+  margin-left: 1%;
   padding: 1%
 }
-
-.formulario label{
-  padding: 0.3%;
-  text-align: start;
-}
-
-.formulario input{
+*/
+.form_group{
+  position: relative;
+  padding: 11px 0 0;
+  margin-top: 10px;
   width: 50%;
-  font-size: 12px;
 }
 
+.form_field{
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #140746;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(23, 10, 70);
+  padding: 9px;
+  background: transparent;
+  transition: border-color 0.8s;
+  
+  &::placeholder {
+    color: transparent;
+  }
+  
+  &:placeholder-shown ~ .form_label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+
+.form_label {
+position: absolute;
+top: 0;
+display: block;
+transition: 0.2s;
+font-size: 1.3rem;
+color: #25034b
+}
+
+.form_field:focus {
+~ .form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #19073a;
+  font-weight:500;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 500;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #0c013b,#e3e1ec);
+  border-image-slice: 1;
+
+}
+/* reset input */
 .name{
-  margin: 5px;
-  margin-left: 24px;
-}
-
-.telefone{
-  margin: 5px ;
-}
-
-.email{
-  margin: 5px;
-  margin-left: 24px;
-}
-
-.profissao{
-  margin: 5px;
-}
-
-.idade{
-  margin: 5px;
-  margin-left: 25px;
+  &:required,&:invalid { box-shadow:none; }
 }
 

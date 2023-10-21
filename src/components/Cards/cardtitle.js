@@ -4,8 +4,9 @@ import './cards.css';
 export default function title(){
     return (
         <>
-            <h3>Lista de usuários cadastrados:</h3>
+            <h3>Lista de funcionarios cadastrados:</h3>
             <div className="Card-title">
+                    <h4>Id</h4>
                     <h4>Nome</h4>
                     <h4>Telefone</h4>
                     <h4>Email</h4>

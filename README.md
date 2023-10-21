@@ -1,6 +1,8 @@
-# Layout do sistema:
+# Layout sistema v1 29.03.2023:
 <img alt="Layout" src="page web execute.gif">
 
+# NewLayout v1 21.10.2023:
+<img alt="NewLayout" src="page web new.gif">
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

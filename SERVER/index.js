@@ -29,6 +29,18 @@ app.post("/register", (req, res)=>{
     
 });
 
+app.delete("/delete${id}", (req, res)=>{
+    const {id} = req.params;
+    let sql = `DELETE FROM dados WHERE id= ${id}`;
+    db.query(sql, (err,result)=>{
+        if(!err){
+            res.send('Deletado com sucesso');
+        }else{
+            console.log(err);
+        }
+    });
+});
+
 app.get("/getCards", (req, res)=>{
     let Sql = "SELECT * FROM dados";
     
