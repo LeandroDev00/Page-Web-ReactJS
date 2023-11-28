@@ -1,8 +1,7 @@
 import React from "react";
-/*
-import { Routes, BrowserRouter as Router, Route} from "react-router-dom";
-*/
-import Cadastro from "./components/Cadastros/Cadastro";
+
+import { Routes, BrowserRouter as Router, Route, Link} from "react-router-dom";
+
 import Consultadados from "./components/Consulta/Consulta";
 
 function App() {
@@ -10,19 +9,19 @@ function App() {
   return (
 
     <>
-      <Cadastro />
-      <br></br>
-      <Consultadados />
-    
-    </>
-    /*
       <Router>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/consultar">Consulta</Link></li>
+          </ul>
           <Routes>
-            <Route path="/" element={<Consultadados/>} />
-            <Route path="/cadastrar" element={<Cadastro />} />
+            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="/consultar" element={<Consultadados/>}/>
           </Routes>
       </Router>
-    */
+    </>
+    
+    
   )
 
 }

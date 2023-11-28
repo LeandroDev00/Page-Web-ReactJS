@@ -20,7 +20,7 @@ function Cadastro(){
         profissao: values.profissao,
         idade: values.idade,
       }).then ((response) =>{
-        console.log(response);
+        console.log(response.send('DADOS INSERIDO COM SUCESSO'));
       });
     };
 

@@ -7,8 +7,8 @@ const cors = require("cors");
 const db = mysql2.createPool({
     host:"localhost",
     user:"root",
-    password:"C@mp0sS@les00",
-    database:"crudgames",
+    password:"******",
+    database:"******",
 });
 
 app.use(cors());
@@ -24,7 +24,12 @@ app.post("/register", (req, res)=>{
 
     let sql = "INSERT INTO dados (name, telefone, email, profissao, idade) VALUES ( ?,?,?,?,? )";
     db.query(sql, [name, telefone,Email, profissao, idade], (err, result)=>{
-        console.log(err);
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log(result.send('DADOS INSERIDO COM SUCESSO'));
+        }
     });
     
 });

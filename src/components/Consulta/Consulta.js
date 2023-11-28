@@ -3,6 +3,7 @@ import "../../App.css";
 import Axios from "axios";
 import Card from "../Cards/card";
 import Cardtitle from "../Cards/cardtitle";
+import Cadastro from "../Cadastros/Cadastro";
 
 
 function Consultadados(){
@@ -16,6 +17,7 @@ const [listdata, setlistData] = useState();
 
  return(
     <>
+      <Cadastro />
         <div className="fraseContainer">
           <Cardtitle />
 
