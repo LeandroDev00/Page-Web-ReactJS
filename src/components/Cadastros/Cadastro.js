@@ -13,46 +13,51 @@ function Cadastro(){
   };
   
   const handleonclickButton = () => {
+    try{
       Axios.post("http://localhost:3001/register", {
         name: values.name,
         telefone: values.telefone,
         Email: values.Email,
         profissao: values.profissao,
         idade: values.idade,
-      }).then ((response) =>{
-        console.log(response.send('DADOS INSERIDO COM SUCESSO'));
-      });
-    };
+      })
+
+      alert.apply(this,[`Cadastro Realizada com sucesso! ✅`]);
+    } catch (err){
+      alert("OPS ! Ocorreu um erro.");
+      console.log(err);
+    }
+  };
 
     return(
         <>
         <div className="App">
-          <p className="cabecalho">Cadastro de Funcionarios 📑</p>
+          <p className="cabecalho">Cadastro Colaboradores 📑</p>
             <form className="fraseContainer">
                 <div className='formulario'>
                     <div className="form_group">
                       <input className="form_field" type="input" placeholder="Name" required="requerid" name="name" onChange={handleChangeValues} />
-                      <label for="name" className="form_label">Name</label>
+                      <span for="forn_name" className="form_label">Nome</span>
                     </div>
 
                     <div className="form_group">
                       <input className="form_field" type="tel" placeholder="Contact..." required="requerid" name="telefone" onChange={handleChangeValues} />
-                      <label for="name" className="form_label">Contact  </label>
+                      <span for="forn_name" className="form_label">Contato</span>
                     </div>
 
                     <div className="form_group">
                       <input className="form_field" type="email" placeholder="Email ..." required="requerid" name="Email" onChange={handleChangeValues} />
-                      <label for="name" className="form_label">Email  </label>
+                      <span for="forn_name" className="form_label">Email</span>
                     </div>
 
                     <div className="form_group">
                       <input className="form_field"type="input" placeholder="Professional..." required="requerid" name="profissao" onChange={handleChangeValues} />
-                      <label for="name" className="form_label">Professional  </label>
+                      <span for="forn_name" className="form_label">Profissão</span>
                     </div>
 
                     <div className="form_group">
                       <input className="form_field"type="input" placeholder="Age ..." required="requerid" name="idade" onChange={handleChangeValues} />
-                      <label for="name" className="form_label">Age  </label>
+                      <span for="forn_name" className="form_label">Idade</span>
                     </div>
                 </div>
                 <button className="buttoncad" onClick={() => handleonclickButton()}>CADASTRAR</button>

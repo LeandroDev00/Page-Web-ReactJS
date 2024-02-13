@@ -56,7 +56,7 @@ top: 0;
 display: block;
 transition: 0.2s;
 font-size: 1.3rem;
-color: #25034b
+color: #25034b; opacity: 30%;
 }
 
 .form_field:focus {
@@ -81,3 +81,15 @@ color: #25034b
   &:required,&:invalid { box-shadow:none; }
 }
 
+.imagedelete{
+  width: 20px;
+  
+}
+
+.buttoedit{
+    border: 1px;
+    background-color: transparent;
+  }
+.buttoedit:hover{
+  transition: 0.1s, 0.1s ease-in-out;
+}

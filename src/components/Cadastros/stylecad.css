@@ -1,5 +1,10 @@
+.cabecalho{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .fraseContainer{
     border: 2px solid #7e7d7d;
+    border-radius: 10px;
     align-items:center;
     padding: 40px;
     text-align: end;
@@ -7,7 +12,7 @@
 }
 
 .buttoncad{
-    width: 10%;
+    width: 8%;
     height: 30px;
     margin-top: 2%;
     margin: 2%;

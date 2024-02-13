@@ -7,44 +7,12 @@ const cors = require("cors");
 const db = mysql2.createPool({
     host:"localhost",
     user:"root",
-    password:"******",
-    database:"******",
+    password:"C@mp0sS@les00",
+    database:"crudgames",
 });
 
 app.use(cors());
 app.use(express.json());
-
-
-app.post("/register", (req, res)=>{
-    const {name} = req.body;
-    const {telefone} = req.body;
-    const {Email} = req.body;
-    const {profissao} = req.body;
-    const {idade} = req.body;
-
-    let sql = "INSERT INTO dados (name, telefone, email, profissao, idade) VALUES ( ?,?,?,?,? )";
-    db.query(sql, [name, telefone,Email, profissao, idade], (err, result)=>{
-        if(err){
-            console.log(err);
-        }
-        else{
-            console.log(result.send('DADOS INSERIDO COM SUCESSO'));
-        }
-    });
-    
-});
-
-app.delete("/delete${id}", (req, res)=>{
-    const {id} = req.params;
-    let sql = `DELETE FROM dados WHERE id= ${id}`;
-    db.query(sql, (err,result)=>{
-        if(!err){
-            res.send('Deletado com sucesso');
-        }else{
-            console.log(err);
-        }
-    });
-});
 
 app.get("/getCards", (req, res)=>{
     let Sql = "SELECT * FROM dados";
@@ -54,6 +22,42 @@ app.get("/getCards", (req, res)=>{
         else res.send(result);
     });
 });
+
+app.post("/register", (req, res)=>{
+    const {name} = req.body;
+    const {telefone} = req.body;
+    const {Email} = req.body;
+    const {profissao} = req.body;
+    const {idade} = req.body;
+
+    let sql = "INSERT INTO dados (name, telefone, email, profissao, idade) VALUES ( ?,?,?,?,? )";
+    db.query(sql, [name, telefone, Email, profissao, idade], (err, result)=>{
+        if(err){
+            console.log(err);
+        }
+        if(result){
+           console.log("Dados inseridos  com sucesso!"); 
+        }
+    });
+    
+});
+
+app.delete("/getCards/deleteCard", (req, res) => {
+    const {id} = req.query; // Correção para obter o parâmetro id dos query parameters
+    if (!id) {
+        return res.status(400).json({ error: "O parâmetro 'id' é obrigatório." });
+    }
+    
+    let sql = "DELETE FROM dados WHERE idcadastro = ?";
+
+    db.query(sql, [id], (err) => {
+        if (err) {
+            return res.status(500).json({ error: "Erro ao excluir registro." });
+        }
+        else console.log("Produto "+id+" excluido com sucesso");
+    });
+});
+
 
 app.listen(3001, ()=>{
     console.log("[....Rodando servidor....]");

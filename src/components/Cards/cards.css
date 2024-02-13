@@ -1,14 +1,38 @@
 .Card-title{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
 }
 
 .card-container{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
-    gap: 10px;
+    font-size: 90%;
+}
+
+.card-id{
+    margin-left: 0%;
+}
+
+.card-name{
+    margin-left: 0%;
+}
+
+.card-telefone{
+    margin-left: 0%;
+}
+
+.card-email{
+    margin-left: 0%;
+}
+
+.card-profissao{
+    margin-left: 0%;
+}
+
+.card-idade{
+    margin-left: 0%;
 }

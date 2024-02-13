@@ -4,7 +4,7 @@ import './cards.css';
 export default function title(){
     return (
         <>
-            <h3>Lista de funcionarios cadastrados:</h3>
+            <h3>Colaboradores Cadastrados:</h3>
             <div className="Card-title">
                     <h4>Id</h4>
                     <h4>Nome</h4>
@@ -13,6 +13,7 @@ export default function title(){
                     <h4>Profissao</h4>
                     <h4>Idade</h4>
             </div>
+            <p>Ação</p>
         </>
     );
 }
